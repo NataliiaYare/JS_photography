@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jo Smith Photography</title>
+    <meta name="description"
+        content="Contact Jo Smith Photography. Send a message, find the Dundee studio on the map, or follow on Instagram and X.">
+    <meta name="keywords" content="contact Jo Smith, Dundee photography, photography booking, Instagram photographer">
+    <meta name="author" content="Jo Smith">
+    <meta property="og:title" content="Contact Jo Smith Photography">
+    <meta property="og:description"
+        content="Get in touch with Jo Smith Photography. Contact form, address, and social media links.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://yourdomain.com/contact.html">
+    <meta property="og:image" content="http://yourdomain.com/images/jo-profile.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./media/favicon/favicon.ico" />
+
+    <!-- PNG favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png" />
+
+    <!-- Apple Touch Icon (iOS Home Screen) -->
+    <link rel="apple-touch-icon" href="./media/favicon/apple-touch-icon.png" />
+
+    <!-- Optional: Web App Manifest for Android/Chrome -->
+    <link rel="manifest" href="./media/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="media/Jo Smith Logo.png" alt="Jo Smith Photography Logo">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slideshow">
+                <img src="media/photo4.jpg" class="active" alt="Nature photography">
+                <img src="media/photo5.jpg" alt="Portrait photography">
+                <img src="media/photo6.jpg" alt="Event photography">
+            </div>
+            <div class="hero-content">
+                <h2>Capturing Nature, Moments & Stories</h2>
+                <p>Dundee-based photographer specialising in nature, portraits, and events.</p>
+                <a href="portfolio.html" class="btn">Explore My Portfolio</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Whether you’d like to book a shoot, request a quote, or just say hi – I’d love to hear from you.</p>
+
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name">
+                    <small class="error-message" aria-live="polite"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@domain.com">
+                    <small class="error-message" aria-live="polite"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+                    <small class="error-message" aria-live="polite"></small>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+
+
+            <section class="map">
+                <h3>Find Me</h3>
+                <div class="map-container">
+
+                    <!-- Embedding HTML API -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.902515193079!2d-4.2605!3d55.826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488844c2e9d5c13d%3A0xdeadbeef12345678!2sGlasgow%20G42%208RY!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+
+            <section class="social">
+                <h3>Follow Me</h3>
+                <a href="#">Instagram</a> | <a href="#">X (Twitter)</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2025 Jo Smith Photography</p>
+            <div class="social-links">
+                <!-- Instagram -->
+                <a href="https://instagram.com/josmithphotography123" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- X (Twitter) -->
+                <a href="https://x.com/josmithphoto" target="_blank" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop">↑</button>
+</body>
+
+</html>
